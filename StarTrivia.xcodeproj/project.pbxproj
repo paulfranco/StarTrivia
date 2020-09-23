@@ -13,6 +13,9 @@
 		033D5E6D251B84FB003533CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033D5E6B251B84FB003533CB /* Main.storyboard */; };
 		033D5E6F251B84FC003533CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033D5E6E251B84FC003533CB /* Assets.xcassets */; };
 		033D5E72251B84FC003533CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033D5E70251B84FC003533CB /* LaunchScreen.storyboard */; };
+		033D5E7B251B8CD1003533CB /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 033D5E79251B8CD0003533CB /* Starjhol.ttf */; };
+		033D5E7C251B8CD1003533CB /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 033D5E7A251B8CD1003533CB /* Starjedi.ttf */; };
+		033D5E7E251B8CD9003533CB /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 033D5E7D251B8CD9003533CB /* Starjout.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		033D5E6E251B84FC003533CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		033D5E71251B84FC003533CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		033D5E73251B84FC003533CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		033D5E79251B8CD0003533CB /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
+		033D5E7A251B8CD1003533CB /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		033D5E7D251B8CD9003533CB /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		033D5E64251B84FB003533CB /* StarTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				033D5E83251B8D3A003533CB /* Model */,
+				033D5E82251B8D31003533CB /* View */,
+				033D5E81251B8D27003533CB /* Controller */,
 				033D5E65251B84FB003533CB /* AppDelegate.swift */,
 				033D5E67251B84FB003533CB /* SceneDelegate.swift */,
 				033D5E69251B84FB003533CB /* SelectPersonVC.swift */,
+				033D5E80251B8D12003533CB /* Resources */,
 				033D5E6B251B84FB003533CB /* Main.storyboard */,
 				033D5E6E251B84FC003533CB /* Assets.xcassets */,
 				033D5E70251B84FC003533CB /* LaunchScreen.storyboard */,
 				033D5E73251B84FC003533CB /* Info.plist */,
 			);
 			path = StarTrivia;
+			sourceTree = "<group>";
+		};
+		033D5E7F251B8D02003533CB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				033D5E7A251B8CD1003533CB /* Starjedi.ttf */,
+				033D5E7D251B8CD9003533CB /* Starjout.ttf */,
+				033D5E79251B8CD0003533CB /* Starjhol.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		033D5E80251B8D12003533CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				033D5E7F251B8D02003533CB /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		033D5E81251B8D27003533CB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		033D5E82251B8D31003533CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		033D5E83251B8D3A003533CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +176,9 @@
 				033D5E72251B84FC003533CB /* LaunchScreen.storyboard in Resources */,
 				033D5E6F251B84FC003533CB /* Assets.xcassets in Resources */,
 				033D5E6D251B84FB003533CB /* Main.storyboard in Resources */,
+				033D5E7C251B8CD1003533CB /* Starjedi.ttf in Resources */,
+				033D5E7E251B8CD9003533CB /* Starjout.ttf in Resources */,
+				033D5E7B251B8CD1003533CB /* Starjhol.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
