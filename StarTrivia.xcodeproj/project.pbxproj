@@ -16,6 +16,10 @@
 		033D5E7B251B8CD1003533CB /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 033D5E79251B8CD0003533CB /* Starjhol.ttf */; };
 		033D5E7C251B8CD1003533CB /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 033D5E7A251B8CD1003533CB /* Starjedi.ttf */; };
 		033D5E7E251B8CD9003533CB /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 033D5E7D251B8CD9003533CB /* Starjout.ttf */; };
+		033D5E85251B9C3B003533CB /* BlackBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D5E84251B9C3B003533CB /* BlackBackgroundView.swift */; };
+		033D5E88251B9CB8003533CB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D5E87251B9CB8003533CB /* Constants.swift */; };
+		033D5E8B251BA25D003533CB /* PersonApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D5E8A251BA25D003533CB /* PersonApi.swift */; };
+		033D5E8D251BAB50003533CB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D5E8C251BAB50003533CB /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		033D5E79251B8CD0003533CB /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
 		033D5E7A251B8CD1003533CB /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
 		033D5E7D251B8CD9003533CB /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
+		033D5E84251B9C3B003533CB /* BlackBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBackgroundView.swift; sourceTree = "<group>"; };
+		033D5E87251B9CB8003533CB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		033D5E8A251BA25D003533CB /* PersonApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonApi.swift; sourceTree = "<group>"; };
+		033D5E8C251BAB50003533CB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,8 @@
 				033D5E65251B84FB003533CB /* AppDelegate.swift */,
 				033D5E67251B84FB003533CB /* SceneDelegate.swift */,
 				033D5E69251B84FB003533CB /* SelectPersonVC.swift */,
+				033D5E89251BA23A003533CB /* Services */,
+				033D5E86251B9CA6003533CB /* Utils */,
 				033D5E80251B8D12003533CB /* Resources */,
 				033D5E6B251B84FB003533CB /* Main.storyboard */,
 				033D5E6E251B84FC003533CB /* Assets.xcassets */,
@@ -105,6 +115,7 @@
 		033D5E82251B8D31003533CB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				033D5E84251B9C3B003533CB /* BlackBackgroundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -112,8 +123,25 @@
 		033D5E83251B8D3A003533CB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				033D5E8C251BAB50003533CB /* Person.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		033D5E86251B9CA6003533CB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				033D5E87251B9CB8003533CB /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		033D5E89251BA23A003533CB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				033D5E8A251BA25D003533CB /* PersonApi.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,7 +217,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033D5E88251B9CB8003533CB /* Constants.swift in Sources */,
+				033D5E8B251BA25D003533CB /* PersonApi.swift in Sources */,
+				033D5E85251B9C3B003533CB /* BlackBackgroundView.swift in Sources */,
 				033D5E6A251B84FB003533CB /* SelectPersonVC.swift in Sources */,
+				033D5E8D251BAB50003533CB /* Person.swift in Sources */,
 				033D5E66251B84FB003533CB /* AppDelegate.swift in Sources */,
 				033D5E68251B84FB003533CB /* SceneDelegate.swift in Sources */,
 			);

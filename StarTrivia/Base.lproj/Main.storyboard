@@ -33,7 +33,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSt-Lr-a0J">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSt-Lr-a0J" customClass="BlackBGView" customModule="StarTrivia" customModuleProvider="target">
                                 <rect key="frame" x="20" y="320.5" width="374" height="255"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="G2M-UI-3X9">
@@ -171,6 +171,17 @@
                                     <constraint firstItem="G2M-UI-3X9" firstAttribute="top" secondItem="cSt-Lr-a0J" secondAttribute="top" constant="20" id="qpZ-l9-Ljm"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETX-QN-TB6" customClass="BlackBgButton" customModule="StarTrivia" customModuleProvider="target">
+                                <rect key="frame" x="102" y="799" width="210" height="43"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.60049229449999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="Tjw-BB-KGj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="19"/>
+                                <state key="normal" title="$ Random #">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -178,10 +189,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ncB-u9-mlT" secondAttribute="trailing" constant="20" id="8og-jE-FnM"/>
                             <constraint firstItem="cSt-Lr-a0J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CEo-nW-nlX"/>
                             <constraint firstAttribute="bottom" secondItem="aH5-br-lOm" secondAttribute="bottom" id="RbA-ZR-cbf"/>
+                            <constraint firstItem="ETX-QN-TB6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TO6-aS-wxJ"/>
                             <constraint firstItem="aH5-br-lOm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Vno-1m-RDY"/>
                             <constraint firstItem="aH5-br-lOm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YWh-nf-JAw"/>
                             <constraint firstItem="aH5-br-lOm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="acC-9a-3bS"/>
                             <constraint firstItem="ncB-u9-mlT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jM3-Xp-HUN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ETX-QN-TB6" secondAttribute="bottom" constant="20" id="lIM-Z2-LSd"/>
                             <constraint firstItem="cSt-Lr-a0J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lzk-lN-8Jd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cSt-Lr-a0J" secondAttribute="trailing" constant="20" id="vtR-c4-a71"/>
                             <constraint firstItem="ncB-u9-mlT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xIO-4j-dDe"/>
@@ -189,7 +202,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="lAH-B8-eFv"/>
                     <connections>
-                        <outlet property="stackBg" destination="cSt-Lr-a0J" id="F6Q-Sd-YbJ"/>
+                        <outlet property="birthYearLabel" destination="tVK-Je-czj" id="W8j-dX-YIm"/>
+                        <outlet property="genderLabel" destination="pwP-xD-7ay" id="3Nk-NL-eIy"/>
+                        <outlet property="hairLabel" destination="2FV-6u-bmF" id="GNh-W5-9yI"/>
+                        <outlet property="heightLabel" destination="6fw-1F-tRd" id="qSS-X3-z4i"/>
+                        <outlet property="massLabel" destination="8vY-qL-79u" id="9nW-eW-Mad"/>
+                        <outlet property="nameLabel" destination="quS-D8-wUC" id="aqC-hi-Msf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
