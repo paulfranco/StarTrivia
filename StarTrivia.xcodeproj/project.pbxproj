@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -80,12 +80,12 @@
 				033D5E83251B8D3A003533CB /* Model */,
 				033D5E82251B8D31003533CB /* View */,
 				033D5E81251B8D27003533CB /* Controller */,
-				033D5E65251B84FB003533CB /* AppDelegate.swift */,
-				033D5E67251B84FB003533CB /* SceneDelegate.swift */,
-				033D5E69251B84FB003533CB /* SelectPersonVC.swift */,
 				033D5E89251BA23A003533CB /* Services */,
 				033D5E86251B9CA6003533CB /* Utils */,
 				033D5E80251B8D12003533CB /* Resources */,
+				033D5E65251B84FB003533CB /* AppDelegate.swift */,
+				033D5E67251B84FB003533CB /* SceneDelegate.swift */,
+				033D5E69251B84FB003533CB /* SelectPersonVC.swift */,
 				033D5E6B251B84FB003533CB /* Main.storyboard */,
 				033D5E6E251B84FC003533CB /* Assets.xcassets */,
 				033D5E70251B84FC003533CB /* LaunchScreen.storyboard */,
@@ -165,7 +165,6 @@
 				1B3F9EACD07BD1B5EB6DCBE7 /* Pods-StarTrivia.debug.xcconfig */,
 				564582D181CF5EFA1DE8B6AB /* Pods-StarTrivia.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

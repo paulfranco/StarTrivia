@@ -11,7 +11,7 @@ import SwiftyJSON
 
 class PersonApi {
     
-    // Web Request with Alamofire and SwiftyJson
+    // Web Request with Alamofire and Codeable
     func getRandomPersonAlamo(id: Int, completion: @escaping PersonResponseCompletion) {
         
         guard let url = URL(string: "\(PERSON_URL)\(id)") else { return }
@@ -26,9 +26,9 @@ class PersonApi {
             guard let data = response.data else { return
                 completion(nil)
             }
+            let jsonDecoder = JSONDecoder()
             do {
-                let json = try JSON(data: data)
-                let person = self.parsePersonSwifty(json: json)
+                let person = try jsonDecoder.decode(Person.self, from: data)
                 completion(person)
             } catch {
                 debugPrint(error.localizedDescription)
@@ -37,6 +37,33 @@ class PersonApi {
             
         }
     }
+    
+    // Web Request with Alamofire and SwiftyJson
+//    func getRandomPersonAlamo(id: Int, completion: @escaping PersonResponseCompletion) {
+//
+//        guard let url = URL(string: "\(PERSON_URL)\(id)") else { return }
+//
+//        Alamofire.request(url).responseJSON { (response) in
+//            if let error = response.result.error {
+//                debugPrint(error.localizedDescription)
+//                completion(nil)
+//                return
+//            }
+//
+//            guard let data = response.data else { return
+//                completion(nil)
+//            }
+//            do {
+//                let json = try JSON(data: data)
+//                let person = self.parsePersonSwifty(json: json)
+//                completion(person)
+//            } catch {
+//                debugPrint(error.localizedDescription)
+//                completion(nil)
+//            }
+//
+//        }
+//    }
     
     // Web Request with Alamofire
 //    func getRandomPersonAlamo(id: Int, completion: @escaping PersonResponseCompletion) {

@@ -15,12 +15,16 @@ class SelectPersonVC: UIViewController {
     @IBOutlet weak var hairLabel: UILabel!
     @IBOutlet weak var birthYearLabel: UILabel!
     @IBOutlet weak var genderLabel: UILabel!
+    @IBOutlet weak var homeworldsButton: UIButton!
+    @IBOutlet weak var vehiclesButton: UIButton!
+    @IBOutlet weak var starshipsButton: UIButton!
+    @IBOutlet weak var filmsButton: UIButton!
     
     var personApi = PersonApi()
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     @IBAction func randomBtnClicked(_ sender: BlackBgButton) {
         let random = Int.random(in: 1...87)
         personApi.getRandomPersonAlamo(id: random) { (person) in
@@ -37,5 +41,13 @@ class SelectPersonVC: UIViewController {
         
     }
     
+    @IBAction func filmsClicked(_ sender: Any) {
+    }
+    @IBAction func starshipsClicked(_ sender: UIButton) {
+    }
+    @IBAction func homeworldClicked(_ sender: UIButton) {
+    }
+    @IBAction func vehiclesClicked(_ sender: UIButton) {
+    }
 }
 
