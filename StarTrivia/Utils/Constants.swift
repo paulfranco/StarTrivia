@@ -13,3 +13,4 @@ let BASE_URL = "https://agile-hollows-54349.herokuapp.com/"
 let PERSON_URL = BASE_URL + "people/"
 
 typealias PersonResponseCompletion = (Person?) -> Void
+typealias HomeworldResponseCompletion = (Homeworld?) -> Void
