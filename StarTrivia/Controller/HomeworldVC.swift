@@ -7,12 +7,14 @@
 
 import UIKit
 
-class HomeworldVC: UIViewController {
+class HomeworldVC: UIViewController, PersonProtocol {
+    
+    var person: Person!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        print(person.name)
+        
     }
     
 
