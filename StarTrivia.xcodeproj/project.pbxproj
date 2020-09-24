@@ -20,6 +20,11 @@
 		033D5E88251B9CB8003533CB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D5E87251B9CB8003533CB /* Constants.swift */; };
 		033D5E8B251BA25D003533CB /* PersonApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D5E8A251BA25D003533CB /* PersonApi.swift */; };
 		033D5E8D251BAB50003533CB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D5E8C251BAB50003533CB /* Person.swift */; };
+		033D5EAF251CDC9B003533CB /* FadeEnabledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D5EAE251CDC9B003533CB /* FadeEnabledButton.swift */; };
+		033D5EB1251CEF35003533CB /* HomeworldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D5EB0251CEF35003533CB /* HomeworldVC.swift */; };
+		033D5EB3251CEF46003533CB /* VehiclesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D5EB2251CEF46003533CB /* VehiclesVC.swift */; };
+		033D5EB5251CEF57003533CB /* StarshipsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D5EB4251CEF57003533CB /* StarshipsVC.swift */; };
+		033D5EB7251CEF65003533CB /* FilmsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D5EB6251CEF65003533CB /* FilmsVC.swift */; };
 		19A1C27C2465DFCF58EA7668 /* Pods_StarTrivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F028DEC4C6EC82F98EC0865A /* Pods_StarTrivia.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +44,11 @@
 		033D5E87251B9CB8003533CB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		033D5E8A251BA25D003533CB /* PersonApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonApi.swift; sourceTree = "<group>"; };
 		033D5E8C251BAB50003533CB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		033D5EAE251CDC9B003533CB /* FadeEnabledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeEnabledButton.swift; sourceTree = "<group>"; };
+		033D5EB0251CEF35003533CB /* HomeworldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldVC.swift; sourceTree = "<group>"; };
+		033D5EB2251CEF46003533CB /* VehiclesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesVC.swift; sourceTree = "<group>"; };
+		033D5EB4251CEF57003533CB /* StarshipsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsVC.swift; sourceTree = "<group>"; };
+		033D5EB6251CEF65003533CB /* FilmsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsVC.swift; sourceTree = "<group>"; };
 		1B3F9EACD07BD1B5EB6DCBE7 /* Pods-StarTrivia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarTrivia.debug.xcconfig"; path = "Target Support Files/Pods-StarTrivia/Pods-StarTrivia.debug.xcconfig"; sourceTree = "<group>"; };
 		564582D181CF5EFA1DE8B6AB /* Pods-StarTrivia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarTrivia.release.xcconfig"; path = "Target Support Files/Pods-StarTrivia/Pods-StarTrivia.release.xcconfig"; sourceTree = "<group>"; };
 		F028DEC4C6EC82F98EC0865A /* Pods_StarTrivia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarTrivia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +95,6 @@
 				033D5E80251B8D12003533CB /* Resources */,
 				033D5E65251B84FB003533CB /* AppDelegate.swift */,
 				033D5E67251B84FB003533CB /* SceneDelegate.swift */,
-				033D5E69251B84FB003533CB /* SelectPersonVC.swift */,
 				033D5E6B251B84FB003533CB /* Main.storyboard */,
 				033D5E6E251B84FC003533CB /* Assets.xcassets */,
 				033D5E70251B84FC003533CB /* LaunchScreen.storyboard */,
@@ -115,6 +124,11 @@
 		033D5E81251B8D27003533CB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				033D5E69251B84FB003533CB /* SelectPersonVC.swift */,
+				033D5EB0251CEF35003533CB /* HomeworldVC.swift */,
+				033D5EB2251CEF46003533CB /* VehiclesVC.swift */,
+				033D5EB4251CEF57003533CB /* StarshipsVC.swift */,
+				033D5EB6251CEF65003533CB /* FilmsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -123,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				033D5E84251B9C3B003533CB /* BlackBackgroundView.swift */,
+				033D5EAE251CDC9B003533CB /* FadeEnabledButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -285,9 +300,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033D5EB7251CEF65003533CB /* FilmsVC.swift in Sources */,
 				033D5E88251B9CB8003533CB /* Constants.swift in Sources */,
+				033D5EAF251CDC9B003533CB /* FadeEnabledButton.swift in Sources */,
 				033D5E8B251BA25D003533CB /* PersonApi.swift in Sources */,
+				033D5EB3251CEF46003533CB /* VehiclesVC.swift in Sources */,
+				033D5EB1251CEF35003533CB /* HomeworldVC.swift in Sources */,
 				033D5E85251B9C3B003533CB /* BlackBackgroundView.swift in Sources */,
+				033D5EB5251CEF57003533CB /* StarshipsVC.swift in Sources */,
 				033D5E6A251B84FB003533CB /* SelectPersonVC.swift in Sources */,
 				033D5E8D251BAB50003533CB /* Person.swift in Sources */,
 				033D5E66251B84FB003533CB /* AppDelegate.swift in Sources */,
