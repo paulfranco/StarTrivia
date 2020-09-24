@@ -23,7 +23,7 @@ class SelectPersonVC: UIViewController {
 
     @IBAction func randomBtnClicked(_ sender: BlackBgButton) {
         let random = Int.random(in: 1...87)
-        personApi.getRandomPersonUrlSession(id: random) { (person) in
+        personApi.getRandomPersonAlamo(id: random) { (person) in
             if let person = person {
                 print(person.name)
                 self.nameLabel.text = person.name
