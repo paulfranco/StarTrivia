@@ -14,3 +14,4 @@ let PERSON_URL = BASE_URL + "people/"
 
 typealias PersonResponseCompletion = (Person?) -> Void
 typealias HomeworldResponseCompletion = (Homeworld?) -> Void
+typealias VehicleResponseCompletion = (Vehicle?) -> Void

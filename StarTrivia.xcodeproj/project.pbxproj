@@ -27,6 +27,9 @@
 		033D5EB7251CEF65003533CB /* FilmsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D5EB6251CEF65003533CB /* FilmsVC.swift */; };
 		033D5EB9251D0AB7003533CB /* Homeworld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D5EB8251D0AB7003533CB /* Homeworld.swift */; };
 		033D5EBB251D0B0C003533CB /* HomeworldApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D5EBA251D0B0C003533CB /* HomeworldApi.swift */; };
+		033D5EBF251D4A71003533CB /* VehicleApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D5EBE251D4A71003533CB /* VehicleApi.swift */; };
+		033D5EC1251D4C98003533CB /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D5EC0251D4C98003533CB /* Vehicle.swift */; };
+		033D5EC3251D4F27003533CB /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033D5EC2251D4F27003533CB /* Film.swift */; };
 		19A1C27C2465DFCF58EA7668 /* Pods_StarTrivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F028DEC4C6EC82F98EC0865A /* Pods_StarTrivia.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +56,9 @@
 		033D5EB6251CEF65003533CB /* FilmsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsVC.swift; sourceTree = "<group>"; };
 		033D5EB8251D0AB7003533CB /* Homeworld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeworld.swift; sourceTree = "<group>"; };
 		033D5EBA251D0B0C003533CB /* HomeworldApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldApi.swift; sourceTree = "<group>"; };
+		033D5EBE251D4A71003533CB /* VehicleApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleApi.swift; sourceTree = "<group>"; };
+		033D5EC0251D4C98003533CB /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		033D5EC2251D4F27003533CB /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		1B3F9EACD07BD1B5EB6DCBE7 /* Pods-StarTrivia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarTrivia.debug.xcconfig"; path = "Target Support Files/Pods-StarTrivia/Pods-StarTrivia.debug.xcconfig"; sourceTree = "<group>"; };
 		564582D181CF5EFA1DE8B6AB /* Pods-StarTrivia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarTrivia.release.xcconfig"; path = "Target Support Files/Pods-StarTrivia/Pods-StarTrivia.release.xcconfig"; sourceTree = "<group>"; };
 		F028DEC4C6EC82F98EC0865A /* Pods_StarTrivia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarTrivia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +157,8 @@
 			children = (
 				033D5E8C251BAB50003533CB /* Person.swift */,
 				033D5EB8251D0AB7003533CB /* Homeworld.swift */,
+				033D5EC0251D4C98003533CB /* Vehicle.swift */,
+				033D5EC2251D4F27003533CB /* Film.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 			children = (
 				033D5E8A251BA25D003533CB /* PersonApi.swift */,
 				033D5EBA251D0B0C003533CB /* HomeworldApi.swift */,
+				033D5EBE251D4A71003533CB /* VehicleApi.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -311,13 +320,16 @@
 				033D5EBB251D0B0C003533CB /* HomeworldApi.swift in Sources */,
 				033D5EAF251CDC9B003533CB /* FadeEnabledButton.swift in Sources */,
 				033D5E8B251BA25D003533CB /* PersonApi.swift in Sources */,
+				033D5EBF251D4A71003533CB /* VehicleApi.swift in Sources */,
 				033D5EB3251CEF46003533CB /* VehiclesVC.swift in Sources */,
 				033D5EB1251CEF35003533CB /* HomeworldVC.swift in Sources */,
+				033D5EC1251D4C98003533CB /* Vehicle.swift in Sources */,
 				033D5E85251B9C3B003533CB /* BlackBackgroundView.swift in Sources */,
 				033D5EB5251CEF57003533CB /* StarshipsVC.swift in Sources */,
 				033D5E6A251B84FB003533CB /* SelectPersonVC.swift in Sources */,
 				033D5E8D251BAB50003533CB /* Person.swift in Sources */,
 				033D5EB9251D0AB7003533CB /* Homeworld.swift in Sources */,
+				033D5EC3251D4F27003533CB /* Film.swift in Sources */,
 				033D5E66251B84FB003533CB /* AppDelegate.swift in Sources */,
 				033D5E68251B84FB003533CB /* SceneDelegate.swift in Sources */,
 			);
